@@ -68,7 +68,9 @@ public class OrderController {
 
     @GetMapping
     @Operation(summary = "나의 주문 목록 조회 API", description = "나의 주문 목록을 조회하는 API 입니다. (구매자 회원용)\n\n" +
-            "페이지 번호 (1 이상)과 주문 상태 필터 값을 보내주세요. 주문 상태 필터 값을 보내지 않을 경우, 전체 주문을 조회합니다.")
+            "페이지 번호 (1 이상)과 주문 상태 필터 값을 보내주세요. 주문 상태 필터 값을 보내지 않을 경우, 전체 주문을 조회합니다."+
+            "페이지 번호 (1 이상)과 주문 상태 필터 값을 보내주세요. 주문 상태 필터 값을 보내지 않을 경우, 전체 주문을 조회합니다."
+    )
     @ApiResponses(value = {
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "COMMON200", description = "OK, 성공"),
     })
